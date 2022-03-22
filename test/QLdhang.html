@@ -1,77 +1,135 @@
 <!DOCTYPE html>
-<!-- 
-    1. h1 - h6  (Heading)
-    2. p - paragraph
-    3. img - image
-    4. a - thẻ đặt được liên kết
-    5. ul, li - (tùy ý sắp xếp thứ tự - thể hiện dsach)
-    6. table - Kẻ bảng
-    7. input - nhập dữ liệu
-    8. button - nút
-    9. div  - tạo khối bao quanh vật thể khác
- -->
-<html>
-    <head>
-        <title>F8 - Shop</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách đơn thuê</title>
+</head>
+<body>
 
-    <body>
-        <!-- Các thẻ trong HTML -->
-        <div>  
-            <h1 id="st_head"> Cộng hòa xã hội chủ nghĩa Việt Nam</h1>
-            <h2 class="nd_head"> Cộng hòa xã hội chủ nghĩa Việt Nam</h1>
-            <h2 class="nd_head"> Cộng hòa xã hội chủ nghĩa Việt Nam</h1>
-            <h3 class="nd_head"> Cộng hòa xã hội chủ nghĩa Việt Nam</h1>
+   
+    
+    <style>
 
-            <button>Đăng ký</button>
+        h3{
+            font-size: 24px;
+        }
+        button{
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(58, 158, 204);
+            color: white;
+            border: 0.5px solid #333;
+            border-collapse: collapse;
 
-            <input type="text">
-            <input type="checkbox">
-            <!-- Trùng name chỉ cho phép -->
-            <input name="gender" type="radio">
-            <input name="gender" type="radio">
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+            border-bottom-right-radius:15px;
+            border-bottom-left-radius:15px;
 
-            <p>Độc lập - Tự do - Hạnh phúc</p>
-            <!-- <img src="https://cdn.24h.com.vn/upload/1-2022/images/2022-03-21//1647846929-beaaf2aaa837bce3390c5b6712df3402-width800height534.jpg " alt="">
-            <a href="https://fullstack.edu.vn/learning/html-css?id=28595e0f-ee7e-46a8-bdb5-fdf842674496">Tới trang F8 tại đây!</a> -->
+            width: 125px;
+            height: 60px;
+            
+        }
+        input {
+            font-size: 17px;
+            color: #000;
+            border: 1px solid #333;
+            position:relative;
+             top: -64px;
+             right: -968px;   
+             
+            width: 270px;
+            height: 63px;
+        }
+        body {
+            font-size: 16.6px;
+            font-family: Times 'Times New Roman', Times, serif;
+        }
+        table{
+            width: 95%;
+            
+        }
+        table, td, th{
+            border: 1.35px solid #333;
+            border-collapse: collapse;
+            
+        }
+        td, th{
+            padding: 1.5px 8px;
+        }
+        thead{
+            background: rgba(124, 123, 165, 0.726);
+        }
 
-            <ul>
-                <li>Nhật</li>
-                <li>Sơn</li>
-                <li>Thảo</li>
-                <li>Tú</li>
-            </ul>
+        .table.table-hover tbody tr:hover{
+            background: rgba(170, 153, 153, 0.692);
+        }
+    </style>
 
-            <table>
-                <thead>
-                    <!-- table heading -->
-                    <th>STT</th>
-                    <th>Name</th>
-                    <th>Địa chỉ</th> 
-                </thead>
+    <h3>DANH SÁCH ĐƠN THUÊ</h3>
+    <button>Thêm mới</button>
+    <form>
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+    <table class="table table-hover">
 
-                <tbody>
-                    <!-- Table row -->
-                    <tr>
-                        <td>1</td>
-                        <td>Nhật</td>
-                        <td>Nghĩa Thắng</td>
-                    </tr>
+        <thead>
+            <tr>
+                <th>IDGD</th>
+                <th>Khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>Thời gian đặt đơn thuê</th>
+                <th>Thời gian bắt đầu công việc</th>
+                <th>Thời gian kết thúc công việc</th>
+                <th>Người giúp việc</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>GD001</td>
+                <td>Lê Đoàn Xuân Nam</td>
+                <td>520 Núi Thành, Hải Châu</td>
+                <td>2022-02-10/13:30</td>
+                <td>2022-02-11/07:00</td>
+                <td>2022-02-11/17:00</td>
+                <td>Lê Xuân Nhật</td>
+                <td>210.000</td>
+                <td>Đã hoàn thành</td>
+            </tr>
+    
+            <tr>
+                <td>GD002</td>
+                <td>Lê Đoàn An Nhiên</td>
+                <td>12A-04, tầng 3A-20</td>
+                <td>2022-02-12/15:43</td>
+                <td>2022-02-14/09:00</td>
+                <td>2022-02-14/16:00</td>
+                <td>Nguyễn Thanh Sơn</td>
+                <td>180.000</td>
+                <td>Đã hoàn thành</td>
+            </tr>
 
-                    <tr>
-                        <td>2</td>
-                        <td>Thúy</td>
-                        <td>Nghĩa Thọ</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <tr>
+                <td>GD00...</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tbody>
+        
+        <tfoot>
 
-        <!-- Hàm attribute -->
-        <div>
-            <h1 title="Hàm attribute">attribute</h1>
-        </div>
-    </body>
+        </tfoot>
+    </table>
+
+</body>
 </html>
