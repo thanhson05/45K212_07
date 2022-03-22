@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý khách hàng</title>
+    <style type="text/css">
+        .panel {
+			width: 60%;
+			margin: 0 auto;
+			border: solid #4267b2 1px;
+		}
+
+		.panel-heading {
+			background-color: #4267b2;
+			padding: 10px;
+			color: white;
+		}
+
+		.panel-body {
+			padding: 10px;
+		}
+
+		.panel-body label {
+			font-weight: bold;
+		}
+
+		.form-group {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.form-control {
+			display: block;
+			width: 98%;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+
+		.table {
+			width: 100%;
+		}
+
+		.table tr {
+			border-bottom: solid blue 1px;
+		}
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-heading">
+            Quản lý thông tin khách hàng
+        </div>
+        <div class="panel-body">
+            <form method="post">           
+                <div class="form-group">
+                    <label>Tài khoản:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+                    <input class="form-control" type="text" name="tai_khoan" id="tai_khoan"
+                    placeholder="Enter Tài khoản">
+    
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input class="form-control" type="text" name="mat_khau" id="mat_khau"
+                    placeholder="Enter Mật khẩu">
+    
+                </div>
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input class="form-control" type="text" name="ho_ten" id="ho_ten"
+                    placeholder="Enter Họ và tên">
+    
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại:</label>
+                    <input class="form-control" type="text" name="SDT" id="SDT"
+                    placeholder="Enter Số điện thoại">
+    
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ:</label>
+                    <input class="form-control" type="text" name="dia_chi" id="dia_chi"
+                    placeholder="Enter Địa chỉ">
+    
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" type="button" onclick="Add()">Add</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="panel" style="margin-top: 20px;">
+		<div class="panel-heading">
+			Danh sách khách hàng
+		</div>
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+					<tr>
+						<th>STT</th>
+						<th>Tài khoản</th>
+						<th>Mật khẩu</th>
+						<th>Họ và tên</th>
+						<th>Số điện thoại</th>
+						<th>Địa chỉ</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="result">
+                    
+				</tbody>
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var KHlist = []
+
+        var count = 0 
+        function Add(){
+            var index = document.getElementById('index').value
+            var tai_khoan = document.getElementById('tai_khoan').value
+            var mat_khau = document.getElementById('mat_khau').value
+            var ho_ten = document.getElementById('ho_ten').value
+            var SDT = document.getElementById('SDT').value
+            var dia_chi = document.getElementById('dia_chi').value
+            
+            var KH = {
+                'tai_khoan': tai_khoan,
+                'mat_khau': mat_khau,
+                'ho_ten': ho_ten,
+                'SDT': SDT,
+                'dia_chi': dia_chi,
+            }
+
+            if(index != '') {
+                KHlist[index] = KH
+                showKH()
+                return;
+
+            }
+            KHlist.push(KH)
+
+            document.getElementById('result').innerHTML +=`<tr>
+                        <td>${++count}</td>
+                        <td>${tai_khoan}</td>
+                        <td>${mat_khau}</td>
+                        <td>${ho_ten}</td>
+                        <td>${SDT}</td>
+                        <td>${dia_chi}</td>
+                        <td><button class="btn btn-warning"
+                            onclick="Edit(${count - 1})">Edit</button></td>
+                        <td><button class="btn btn-danger" 
+                            onclick="Delete(${count - 1})">Delete</button></td>
+                    </tr>`
+        }
+
+        function Delete(index){
+            console.log(index)
+            KHlist.splice(index, 1)
+            showKH();
+        }
+   
+        function showKH(){
+            document.getElementById('result').innerHTML =''
+            for (var i = 0; i < KHlist.length; i++) {
+                document.getElementById('result').innerHTML +=`<tr>
+                        <td>${i+1}</td>
+                        <td>${KHlist[i].tai_khoan}</td>
+                        <td>${KHlist[i].mat_khau}</td>
+                        <td>${KHlist[i].ho_ten}</td>
+                        <td>${KHlist[i].SDT}</td>
+                        <td>${KHlist[i].dia_chi}</td>
+                        <td><button class="btn btn-warning"
+                            onclick="Edit(${i})">Edit</button></td>
+                        <td><button class="btn btn-danger" 
+                            onclick="Delete(${i})">Delete</button></td>
+                    </tr>`
+            }
+            
+
+        }
+
+        function Edit(index) {
+            var KH = KHlist[index]
+            console.log(KH)
+            document.getElementById('index').value = index
+            document.getElementById('tai_khoan').value = KH.tai_khoan
+            document.getElementById('mat_khau').value = KH.mat_khau
+            document.getElementById('ho_ten').value = KH.ho_ten
+            document.getElementById('SDT').value = KH.SDT
+            document.getElementById('dia_chi').value = KH.dia_chi
+
+
+        }
+    </script>
+</body>
+</html>
