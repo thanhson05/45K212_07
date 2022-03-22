@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIÚP VIỆC</title>
+    <style type="text/css">
+        .panel {
+			width: 60%;
+			margin: 0 auto;
+			border: solid #f5260a 1px;
+		}
+
+		.panel-heading {
+			background-color: #f5260a;
+			padding: 10px;
+			color: white;
+            text-align: center;
+		}
+
+		.panel-body {
+			padding: 10px;
+		}
+
+		.panel-body label {
+			font-weight: bold;
+		}
+
+		.form-group {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.form-control {
+			display: block;
+			width: 98%;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+
+		.table {
+			width: 100%;
+		}
+
+		.table tr {
+			border-bottom: solid rgb(255, 8, 0) 1px;
+		}
+    </style>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<body>
+    <div class="panel">
+        <div class="panel-heading">
+            Thêm thông tin người giúp việc
+        </div>
+        <div class="panel-body">
+            <form method="post">           
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="number" name="index" id="index" value="" hidden="true">
+                    <input class="form-control" type="text" name="name" id="name">
+    
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại:</label>
+                    <input class="form-control" type="text" name="phone" id="phone">
+    
+                </div>
+                <div class="form-group">
+                    <label>Địa chỉ:</label>
+                    <input class="form-control" type="text" name="address" id="address">
+    
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" type="button" onclick="Thêm()">Thêm</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="panel" style="margin-top: 20px;">
+		<div class="panel-heading">
+			Quản lí người giúp việc người giúp việc
+		</div>
+        <div class="panel-body">
+            <table class="table">
+                <thead>
+					<tr>
+						<th>STT</th>
+						<th>Họ và tên</th>
+						<th>Số điện thoại</th>
+						<th>Địa chỉ</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="dataList">
+                    
+				</tbody>
+
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var GVlist = []
+
+        var count = 0 
+        function Thêm(){
+            var index = document.getElementById('index').value
+            var name = document.getElementById('name').value
+            var phone = document.getElementById('phone').value
+            var address = document.getElementById('address').value
+            
+            var GV = {
+                'name': name,
+                'phone': phone,
+                'address': address,
+            }
+
+            if(index != '') {
+                GVlist[index] = GV
+                showGV()
+                return;
+
+            }
+            GVlist.push(GV)
+
+            document.getElementById('dataList').innerHTML +=`<tr>
+                        <td>${++count}</td>
+                        <td>${name}</td>
+                        <td>${phone}</td>
+                        <td>${address}</td>
+                        <td><button class="btn btn-warning"
+                            onclick="Edit(${count - 1})">Edit</button></td>
+                        <td><button class="btn btn-danger" 
+                            onclick="Delete(${count - 1})">Delete</button></td>
+                    </tr>`
+        }
+
+        function Delete(index){
+            console.log(index)
+            GVlist.splice(index, 1)
+            showGV();
+        }
+   
+        function showGV(){
+            document.getElementById('dataList').innerHTML =''
+            for (var i = 0; i < GVlist.length; i++) {
+                document.getElementById('dataList').innerHTML +=`<tr>
+                        <td>${i+1}</td>
+                        <td>${GVlist[i].name}</td>
+                        <td>${GVlist[i].phone}</td>
+                        <td>${GVlist[i].address}</td>
+                        <td><button class="btn btn-warning"
+                            onclick="Edit(${i})">Edit</button></td>
+                        <td><button class="btn btn-danger" 
+                            onclick="Delete(${i})">Delete</button></td>
+                    </tr>`
+            }
+
+        }
+
+        function Edit(index) {
+            var GV = GVlist[index]
+            console.log(GV)
+            document.getElementById('index').value = index
+            document.getElementById('name').value = GV.name
+            document.getElementById('phone').value = GV.phone
+            document.getElementById('address').value = GV.address
+        }
+    </script>
+</body>
+</html>
