@@ -2173,3 +2173,75 @@ ul.location_icon span {
 .special-page .relative  {text-align:center !important; }
 
 .special-page .footer {margin-top: 90px;}
+
+/**login**/
+.log-in {
+     background: #ffffff;
+     padding: 90px 0px;
+     font-family:'Times New Roman', Times, serif
+}
+
+.titlepage {
+     padding-bottom: 60px;
+}
+
+.titlepage h2 {
+     font-size: 50px;
+     line-height: 40px;
+     font-weight: bold;
+     padding: 0;
+}
+
+.contact .main_form {
+     background: #fff;
+    box-shadow: #ddd 0px 0px 19px 1px;
+    padding: 40px;
+} 
+
+.form-control {
+     border: #ff0000 solid 2px;
+     border-radius: inherit;
+     margin-bottom: 30px;
+     padding: 13px 20px;
+     font-family: poppins;
+}
+.form-control:focus {
+     box-shadow: inherit;
+     border: #ff0000 solid 2px !important;
+}
+
+.textarea {
+     font-family: poppins;
+     border: #ff0000 solid 2px;
+     margin-bottom: 30px;
+     padding: 13px 20px;
+     width: 100%;
+     padding-top: 40px;
+} 
+
+.login {
+     font-family: poppins;
+    max-width: 212px;
+    margin: 0 auto;
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 12px 0px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.login:hover {
+     background: #ff0000;
+}
+.sign {
+     font-family: poppins;
+    max-width: 212px;
+    margin: 0 auto;
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 12px 0px;
+    width: 100%;
+    font-size: 20px;
+}
