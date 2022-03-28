@@ -2230,7 +2230,9 @@ ul.location_icon span {
     width: 100%;
     font-size: 17px;
 }
-
+.col-md-13{
+     font-size: 17px;
+}
 .login:hover {
      background: #ff0000;
 }
@@ -2243,5 +2245,5 @@ ul.location_icon span {
     color: #fff;
     padding: 12px 0px;
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
 }
