@@ -1864,10 +1864,10 @@ border-radius: 50px;
 .brand-bg .brand_box {
      background: #fff;
      text-align: center;
-     padding: 80px 0px 30px 0px ;
+     padding: 20px 0px 30px 0px ;
 }
 .brand-bg .brand_box > img {
-    height: 200px;
+    height: 450px;
     width: auto;
 }
 .brand-bg .brand_box h3 {
