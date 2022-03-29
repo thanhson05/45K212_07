@@ -306,11 +306,7 @@ button {
      margin: 15px 0px 60px 0px;
 }
 
-a.readmore_bt {
-     color: #fff;
-     font-weight: 300;
-     text-decoration: underline !important;
-}
+
 
 .main_bt:hover,
 .main_bt:focus {
@@ -1847,7 +1843,8 @@ border-radius: 50px;
 .brand {
      padding-top: 60px;
      border-top: #db0000 solid 6px;
-     font-family:'Times New Roman', Times, serif
+     font-family:'Times New Roman', Times, serif;
+    
 }
 
 .brand-bg {
@@ -1865,7 +1862,12 @@ border-radius: 50px;
      background: #fff;
      text-align: center;
      padding: 20px 0px 30px 0px ;
+
 }
+
+
+
+
 .brand-bg .brand_box > img {
     height: 450px;
     width: auto;
@@ -1892,26 +1894,21 @@ padding-bottom: 3px;
      padding: 0px 2px;
 }
 
-.read-more { 
-font-family:'Times New Roman', Times, serif;
-max-width: 212px;
-margin: 0 auto;
-margin-top: 0px;
-display: block;
-background: #000;
-color: #fff !important;
-padding: 12px 0px;
-width: 100%;
-font-size: 17px;
-text-align: center;
-border-radius: 32px;
-margin-top: 40px
+#read-more{
+margin-top: 20px;
+display: inline-blcock;
+padding: 13px 30px;
+border: 1px solid #334;
+color: #334;
+font-size: 16px;
+background-color: #fff;
+cursor: pointer;
 }
-
-.read-more:hover {
-     background: #ff0000;
+#read-more:hover{
+background-color: crimson;
+border-color: crimson;
+color:#fff;
 }
-
 /** end brand **/
 .clients
 {
