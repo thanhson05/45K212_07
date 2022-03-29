@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <style>
+        #karik{
+            border: 0.5px solid #333;
+            border-collapse: collapse;
+            position:relative;
+            
+            border-width: 1.5px;
+            border-top: #F62;
+            border-left: 0;
+            border-right: #952;
+            width: 70%;
+            
+        }
+        #karik #img{
+            width: 80px;
+            height: 70px;
+            background: #7fee1d;
+            -moz-border-radius: 90px;
+            -webkit-border-radius: 90px;
+            border-radius: 60px;
+        }
+
+        #karik #ten{
+            position: relative;
+            top: 35px;
+            left: 78px;
+            font-size: 19px;
+            padding: 8px;
+        }
+        
+        #karik #text{
+
+            position: relative;
+            width: 70%;
+            height: 10%;
+            top: -20px;
+            left: 74px;
+            font-size: 17px;
+
+        }
+
+
+        #suboi{
+            border: 0.5px solid #333;
+            border-collapse: collapse;
+            position:relative;
+            
+            border-width: 1.5px;
+            border-top: #F62;
+            border-left: 0;
+            border-right: #952;
+            width: 70%;
+        }
+
+        #suboi #img{
+            width: 75px;
+            height: 70px;
+            background: #7fee1d;
+            -moz-border-radius: 90px;
+            -webkit-border-radius: 90px;
+            border-radius: 60px;
+            position: relative;
+            top: 0px;
+            left: -30px;
+        }
+
+        #suboi #ten{
+            position: relative;
+            top: 35px;
+            left: 58px;
+            font-size: 19px;
+            /* padding: 8px; */
+        }
+
+        #suboi #text{
+
+            position: relative;
+            width: 70%;
+            height: 10%;
+            top: -20px;
+            left: 74px;
+            font-size: 17px;
+
+        }
+
+        div.stars {
+            width: 20;
+            height: 90;
+            display: inline-block;
+            position: relative;
+            top: -38px;
+            left: 74px;
+        }
+
+       
+           /* --------------------------------- */
+
+        input.star1 { display: none; }
+            
+        label.star1 {
+            float: right;
+            padding: 8px;
+            font-size: 140%;
+            color: #444;
+            transition: all .4s;
+        }
+            
+        input.star1:checked ~ label.star1:before {
+            content: '\f005';
+            color: rgb(231, 199, 53);
+            transition: all .25s;
+        }
+            
+        input.star1-5:checked ~ label.star1:before {
+            color: rgb(228, 212, 97);
+            text-shadow: 0 0 20px #952;
+        }
+            
+        input.star1-1:checked ~ label.star1:before { color: #F62; }
+            
+        label.star1:hover { transform: rotate(-15deg) scale(1.3); }
+            
+        label.star1:before {
+            content: '\f006';
+            font-family: FontAwesome;
+        }
+
+
+
+       
+            /* ------------------------ */
+        input.star2 { display: none; }
+            
+        label.star2 {
+            float: right;
+            padding: 8px;
+            font-size: 140%;
+            color: #444;
+            transition: all .4s;
+        }
+            
+        input.star2:checked ~ label.star2:before {
+            content: '\f005';
+            color: rgb(231, 199, 53);
+            transition: all .25s;
+        }
+            
+        input.star2-5:checked ~ label.star2:before {
+            color: rgb(228, 212, 97);
+            text-shadow: 0 0 20px #952;
+        }
+            
+        input.star2-1:checked ~ label.star2:before { color: #F62; }
+            
+        label.star2:hover { transform: rotate(-15deg) scale(1.3); }
+            
+        label.star2:before {
+            content: '\f006';
+            font-family: FontAwesome;
+        }
+        
+
+        input.star3 { display: none; }
+            
+        label.star3 {
+                float: right;
+                padding: 8px;
+                font-size: 140%;
+                color: #444;
+                transition: all .4s;
+        }
+                
+        input.star3:checked ~ label.star3:before {
+                content: '\f005';
+                color: rgb(231, 199, 53);
+                transition: all .25s;
+        }
+                
+        input.star3-5:checked ~ label.star3:before {
+                color: rgb(228, 212, 97);
+                text-shadow: 0 0 20px #952;
+        }
+                
+        input.star3-1:checked ~ label.star3:before { color: #F62; }
+                
+        label.star3:hover { transform: rotate(-15deg) scale(1.3); }
+                
+        label.star3:before {
+                content: '\f006';
+                font-family: FontAwesome;
+        }    
+
+      
+        input.star4 { display: none; }
+            
+        label.star4 {
+                float: right;
+                padding: 8px;
+                font-size: 140%;
+                color: #444;
+                transition: all .4s;
+            }
+                
+        input.star4:checked ~ label.star4:before {
+                content: '\f005';
+                color: rgb(231, 199, 53);
+                transition: all .25s;
+            }
+                
+        input.star4-5:checked ~ label.star4:before {
+                color: rgb(228, 212, 97);
+                text-shadow: 0 0 20px #952;
+            }
+                
+        input.star4-1:checked ~ label.star4:before { color: #F62; }
+                
+        label.star4:hover { transform: rotate(-15deg) scale(1.3); }
+                
+        label.star4:before {
+                content: '\f006';
+                font-family: FontAwesome;
+            }       
+
+
+
+
+            
+        label.remove.remove-6{
+            size: 1px;
+            position: relative;
+            width: -100%;
+            height: 100%;
+            top: -70%;
+            left: 96%;
+        }
+        label.remove.remove-6:before {
+            content: '\f014';
+            font-family: FontAwesome;
+        }
+   
+        input.remove { 
+            display: none; 
+        }
+            
+        label.remove {
+            float: left;
+            padding: 8px;
+            font-size: 150%;
+            color: rgb(0, 0, 0);
+            transition: all .4s;
+        }
+
+        .remove{
+            position: relative;
+            top: -34px;
+        }
+        label.remove:hover { 
+            transform: rotate(-15deg) scale(1.6); 
+            color: rgb(218, 38, 25); 
+        }
+       
+
+                    
+    </style>
+
+</head>
+
+<body>
+    <div id="karik">
+        <p3 id="ten">Karik</p3>
+        <div> 
+            <img id="img" src="https://cf.shopee.vn/file/bba36e798a69afe00e8eec184557b244" alt="">
+        </div>
+        
+    
+        <div class="stars">
+            <form action="">
+              <input class="star1 star1-5" id="star1-5" type="radio" name="star1"/>
+              <label class="star1 star1-5" for="star1-5"></label>
+              <input class="star1 star1-4" id="star1-4" type="radio" name="star1"/>
+              <label class="star1 star1-4" for="star1-4"></label>
+              <input class="star1 star1-3" id="star1-3" type="radio" name="star1"/>
+              <label class="star1 star1-3" for="star1-3"></label>
+              <input class="star1 star1-2" id="star1-2" type="radio" name="star1"/>
+              <label class="star1 star1-2" for="star1-2"></label>
+              <input class="star1 star1-1" id="star1-1" type="radio" name="star1"/>
+              <label class="star1 star1-1" for="star1-1"></label>
+            </form>
+        </div> 
+
+        <div id="text">
+            <p>Một điếu, cho anh em, người cùng con vào sinh ra tử. Một điếu, cho cha mẹ, tội bất hiếu này khó tha thứ. Một điếu, dành cho trời, một điếu, dành cho đất. Một điếu, dành cho những người lạy trước bàn thờ khi con mất.</p>
+        
+        </div>
+
+        <div class="remove">
+            <form action="">
+              <input class="remove remove-6" id="remove-6" type="radio" name="remove"/>
+              <label class="remove remove-6" for="remove remove-6"></label>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <div id="suboi">
+        <p3 id="ten">Suboi</p3>
+        <div> <img id="img" src="https://thegioigiaitri.com.vn/wp-content/uploads/2020/09/Suboi-va-phong-cach-thoi-trang-da-dang-bien-hoa-2.jpg" alt="">
+        </div>
+    
+        <div class="stars">
+            <form action="">
+              <input class="star2 star2-5" id="star2-5" type="radio" name="star2"/>
+              <label class="star2 star2-5" for="star2-5"></label>
+              <input class="star2 star2-4" id="star2-4" type="radio" name="star2"/>
+              <label class="star2 star2-4" for="star2-4"></label>
+              <input class="star2 star2-3" id="star2-3" type="radio" name="star2"/>
+              <label class="star2 star2-3" for="star2-3"></label>
+              <input class="star2 star2-2" id="star2-2" type="radio" name="star2"/>
+              <label class="star2 star2-2" for="star2-2"></label>
+              <input class="star2 star2-1" id="star2-1" type="radio" name="star2"/>
+              <label class="star2 star2-1" for="star2-1"></label>
+            </form>
+        </div>
+        <div id="text">
+            <p>Bật luôn công tắt, gật đầu. Ngọt như cam vắt, từng câu. Bằng hay là trắc, cân nhắc. Vần truyền mic gắt, LET'S GO </p> 
+        </div>
+
+        <div class="remove">
+            <form action="">
+              <input class="remove remove-6" id="remove-6" type="radio" name="remove"/>
+              <label class="remove remove-6" for="remove remove-6"></label>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <div id="suboi">
+        <p3 id="ten">Wowy</p3>
+        <div> <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPY1qMKpak6U5dMP0ur16kNxNbwKUU878bxg&usqp=CAU" alt="">
+        </div>
+    
+        <div class="stars">
+            <form action="">
+              <input class="star3 star3-5" id="star3-5" type="radio" name="star"/>
+              <label class="star3 star3-5" for="star3-5"></label>
+              <input class="star3 star3-4" id="star3-4" type="radio" name="star"/>
+              <label class="star3 star3-4" for="star3-4"></label>
+              <input class="star3 star3-3" id="star3-3" type="radio" name="star"/>
+              <label class="star3 star3-3" for="star3-3"></label>
+              <input class="star3 star3-2" id="star3-2" type="radio" name="star"/>
+              <label class="star3 star3-2" for="star3-2"></label>
+              <input class="star3 star3-1" id="star3-1" type="radio" name="star"/>
+              <label class="star3 star3-1" for="star3-1"></label>
+            </form>
+        </div>
+        <div id="text">
+            <p>Một điếu, cho anh em, người cùng con vào sinh ra tử. Một điếu, cho cha mẹ, tội bất hiếu này khó tha thứ. Một điếu, dành cho trời, một điếu, dành cho đất. Một điếu, dành cho những người lạy trước bàn thờ khi con mất.</p> 
+        </div>
+
+        <div class="remove">
+            <form action="">
+              <input class="remove remove-6" id="remove-6" type="radio" name="remove"/>
+              <label class="remove remove-6" for="remove remove-6"></label>
+            </form>
+        </div>
+        
+        
+    </div>
+
+    <div id="suboi">
+        <p3 id="ten">BinZ</p3>
+        <div> <img id="img" src="https://media.viezone.vn/prod/2022/1/10/binz_1_1594272649858_085a68da10.jpeg" alt="">
+        </div>
+    
+        <div class="stars">
+            <form action="">
+              <input class="star4 star4-5" id="star4-5" type="radio" name="star"/>
+              <label class="star4 star4-5" for="star4-5"></label>
+              <input class="star4 star4-4" id="star4-4" type="radio" name="star"/>
+              <label class="star4 star4-4" for="star4-4"></label>
+              <input class="star4 star4-3" id="star4-3" type="radio" name="star"/>
+              <label class="star4 star4-3" for="star4-3"></label>
+              <input class="star4 star4-2" id="star4-2" type="radio" name="star"/>
+              <label class="star4 star4-2" for="star4-2"></label>
+              <input class="star4 star4-1" id="star4-1" type="radio" name="star"/>
+              <label class="star4 star4-1" for="star4-1"></label>
+            </form>
+        </div>
+        <div id="text">
+            <p>Em on top, không phải trending. Không phải YouTube, không phải trên Zing. Anh on top, em ở trên anh. Beat Touliver drop người ta gọi tên anh. Big city. Big city boi</p> 
+        </div>
+
+
+
+
+
+        
+        <div class="remove">
+            <form action="">
+              <input class="remove remove-6" id="remove-6" type="button" name="remove"/>
+              <label class="remove remove-6" for="remove remove-6"></label>
+            </form>
+        </div>
+
+        <script>
+            
+            remove.setAttribute("onclick", "xoa(this)");
+            function xoa(x) {
+                // var tr=x.parentElement.parentElement;
+                tr.remove()
+            }
+        </script>
+        
+        
+    </div>
+
+  
+    
+</body>
+</html>
