@@ -370,3 +370,32 @@ $(function () {
 
 
 });
+
+//-------------Product-------//
+const gioithieu = document.querySelector(".gioithieu")
+const kinhnghiem = document.querySelector(".kinhnghiem")
+const kinang = document.querySelector(".kinang")
+if(gioithieu){
+	gioithieu.addEventListener("click", function(){
+		document.querySelector(".product-content-right-bottom-content-gioithieu").style.display = "block"
+		document.querySelector(".product-content-right-bottom-content-kinang").style.display = "none"
+		document.querySelector(".product-content-right-bottom-content-kinhnghiem").style.display = "none"
+
+	})
+}
+if(kinhnghiem){
+	kinhnghiem.addEventListener("click", function(){
+		document.querySelector(".product-content-right-bottom-content-gioithieu").style.display = "none"
+		document.querySelector(".product-content-right-bottom-content-kinang").style.display = "none"
+		document.querySelector(".product-content-right-bottom-content-kinhnghiem").style.display = "block"
+
+	})
+}
+if(kinang){
+	kinang.addEventListener("click", function(){
+		document.querySelector(".product-content-right-bottom-content-gioithieu").style.display = "none"
+		document.querySelector(".product-content-right-bottom-content-kinang").style.display = "block"
+		document.querySelector(".product-content-right-bottom-content-kinhnghiem").style.display = "none"
+
+	})
+}
