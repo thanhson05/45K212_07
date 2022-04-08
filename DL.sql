@@ -55,7 +55,7 @@ create table Transactions
 insert into Users values(1111,'thuybt','12345',N'Bùi Thị Thúy','0366464739', N'Đà Nẵng','thuythuy')
 
 --feedback
-insert into Staff values(1111,'thuybt','bbbb', 5)
+insert into Staff values(4444, 1111,'Tốt', 5)
 --staff
 insert into Users values(2222,N'Nguyễn Văn Tú','09874364839', N'Đà Nẵng')
 --Transaction
