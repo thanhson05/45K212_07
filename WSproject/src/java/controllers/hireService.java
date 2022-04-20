@@ -8,6 +8,7 @@ package controllers;
 import DAO.allDao;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,9 +39,7 @@ public class hireService extends HttpServlet {
         allDao dao = new allDao();
         ArrayList<Staff> staffList = dao.getAllStaff();
         request.setAttribute("stafflist", staffList);
-
         request.getRequestDispatcher("hireSV.jsp").forward(request, response);
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -69,7 +68,25 @@ public class hireService extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        response.setContentType("text/html;charset=UTF-8");
+        String name = request.getParameter("name");
+        allDao dao = new allDao();
+        ArrayList<Staff> staffList = dao.searchByName(name);
+//        ArrayList<Staff> staffList = new ArrayList<>();
+//        response.getWriter().println(name);
+//
+//        for (Staff staff : raww) {
+//            response.getWriter().println(staff.getName());
+//
+//            if (staff.getName().contains(name)) {
+//                staffList.add(staff);
+//                response.getWriter().println("11");
+//
+//            }
+//        }
+        response.getWriter().println(staffList.size());
+        request.setAttribute("stafflist", staffList);
+        request.getRequestDispatcher("hireSV.jsp").forward(request, response);
     }
 
     /**
