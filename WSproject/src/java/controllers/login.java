@@ -39,7 +39,7 @@ public class login extends HttpServlet {
         HttpSession session = request.getSession();
 
         String action = request.getParameter("action");
-        if (action==null) {
+        if (action == null) {
             action = "login";
         }
         if (action.equalsIgnoreCase("login")) {
@@ -71,8 +71,13 @@ public class login extends HttpServlet {
                 } else {
                     session.setAttribute("admin", "false");
                 }
+                response.sendRedirect("home");
+
+            } else {
+                request.setAttribute("mess", "Mật khẩu hoặc tài khoản không đúng. Vui lòng nhập lại!");
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+
             }
-            response.sendRedirect("home");
 
         }
     }
