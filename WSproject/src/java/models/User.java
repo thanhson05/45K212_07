@@ -88,6 +88,9 @@ public class User {
     public String getIsAdmin() {
         return isAdmin;
     }
+    public boolean itIsAdmin(){
+        return isAdmin.equals("true");
+    }
 
     public void setIsAdmin(String isAdmin) {
         this.isAdmin = isAdmin;
