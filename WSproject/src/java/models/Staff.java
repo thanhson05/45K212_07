@@ -24,6 +24,10 @@ public class Staff {
         this.imglink = imglink;
     }
 
+    public Staff(String name) {
+        this.name = name;
+    }
+
     public String getImglink() {
         return imglink;
     }
