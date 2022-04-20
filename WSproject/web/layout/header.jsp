@@ -37,7 +37,6 @@
                                     <li> <a href="about">Giới thiệu</a> </li>
                                     <li><a href="hireService">Thuê giúp việc</a></li>
                                     <li><a href="advertisement">Quảng cáo</a></li>
-                                    <li><a href="contact">liên lạc</a></li>
 
                                     <!--<li>Welcome ... đây sẽ là trang sửa thông tin cá nhân cò</li>-->
                                     <c:if test="${sessionScope.user == null}">
@@ -47,14 +46,24 @@
                                         <li><a href="login?action=logout">Đăng xuất</a></li>
                                         </c:if>
                                 </ul>
-                                <div style="display: flex; flex-direction: row; align-content: space-around">
+                                <div style="width: 100%;display: flex; flex-direction: column">
                                     <c:if test="${sessionScope.user != null}">
-                                        <p style="color: white; font-size: 25px; margin: 0px 20% ">Welcome ${sessionScope.user}</p>
+                                        <p style="color: white; font-size: 20px; ">Welcome ${sessionScope.user}</p>
                                         <c:if test="${sessionScope.admin}">
-                                            <a style="color: white; font-size: 25px;" href="seeFeedback?action=see">Xem phản hồi</a>
+                                            <div style="display: flex; flex-direction: row;justify-content: flex-end">
+                                                <a style="color: white; font-size: 20px; margin-right: 35px" href="seeFeedback?action=see">Xem phản hồi</a>
+                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="orderManager?action=see">Quản lí đơn hàng</a>
+                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="staffmanager?action=see">Quản lí Nhân Viên</a>
+                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="customerManager?action=see">Quản lí Khách Hàng </a>
+
+                                            </div>
                                         </c:if>
                                         <c:if test="${!sessionScope.admin}">
-                                            <a style="color: white; font-size: 25px;" href="feedback">Gửi phản hồi</a>
+                                            <div style="display: flex; flex-direction: row;justify-content: flex-end">
+                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="feedback">Gửi phản hồi</a>
+                                                <a style="color: white; font-size: 20px;" href="edituser">Sửa thông tin cá nhân</a>
+                                            </div>
+
                                         </c:if>
                                     </c:if>
                                 </div>
