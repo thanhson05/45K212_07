@@ -36,7 +36,7 @@ public class seeDetail extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         allDao dao = new allDao();
         int id = Integer.parseInt(request.getParameter("sid"));
-        
+
         Staff s = dao.getStaffById(id);
         request.setAttribute("s", s);
         request.getRequestDispatcher("detailSV.jsp").forward(request, response);
@@ -70,6 +70,7 @@ public class seeDetail extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
         if (request.getSession().getAttribute("userid") == null) {
             response.sendRedirect("login");
         } else {
@@ -80,7 +81,11 @@ public class seeDetail extends HttpServlet {
             allDao dao = new allDao();
             response.getWriter().println(totaltime);
             dao.insertTrans(sid, uid, totaltime, status);
-            response.sendRedirect("home");
+            Staff st = dao.getStaffById(sid);
+            request.setAttribute("st", st);
+            request.setAttribute("totaltime", totaltime);
+            request.setAttribute("totalbill", totaltime * 100000);
+            request.getRequestDispatcher("orderdetail.jsp").forward(request, response);
         }
     }
 
