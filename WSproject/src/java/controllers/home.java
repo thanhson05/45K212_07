@@ -39,7 +39,6 @@ public class home extends HttpServlet {
         ArrayList<Staff> staffList = dao.get3Staff();
         request.setAttribute("stafflist", staffList);
         request.getRequestDispatcher("home.jsp").forward(request, response);
-
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
