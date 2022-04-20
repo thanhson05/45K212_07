@@ -54,11 +54,18 @@
                         </div>
                     </div>
                 </div>
+                <form action="hireService" method="post" >
+                    <input name="name" type="text" placeholder="Tìm kiếm người giúp việc">
+                    <button type="submit" style="padding: 5px; background-color: red;color: white; border-radius: 5px;">Tìm kiếm</button>
+                </form>
             </div>
         </div>
+
         <div class="brand-bg">
             <div class="container">
+
                 <div class="row">
+
                     <c:forEach items="${stafflist}" var="staff">
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                             <div class="brand_box">
