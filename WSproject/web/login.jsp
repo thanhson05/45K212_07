@@ -56,6 +56,9 @@
                                 <div class="col-md-12">
                                     <input class="form-control" placeholder="Mật khẩu" type="password" name="user_pass">
                                 </div>
+                                <div class="col-md-12">
+                                    <p style="color: red">${mess}</p>
+                                </div>
                                 <div class=" col-md-13">
                                     <li><a href="signup">Đăng kí tài khoản</a></li>
                                     <!--   <button><a href="signup.html">Đăng kí</a></button>-->
