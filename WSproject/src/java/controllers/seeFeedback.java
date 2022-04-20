@@ -37,6 +37,9 @@ public class seeFeedback extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String action = request.getParameter("action");
         allDao dao = new allDao();
+        if (action == null) {
+            response.sendRedirect("http://localhost:8080/WSproject/home");
+        }
         if (action.equals("remove")) {
             int fid = Integer.valueOf(request.getParameter("fid"));
             dao.deleteFeedback(fid);
