@@ -46,27 +46,25 @@
          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="images/banner.jpg" alt="First slide">
+                  <img class="first-slide" src="images/b1.jpg" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <span>All New Phones </span>
-                        <h1>up to 25% Flat Sale</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content
-                           <br> of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                        <a class="buynow" href="#">Buy Now</a>
+                        <span>WS Service </span>
+                        <h1>The best choice for you</h1>
+                       
+                        <a class="buynow" href="hireService">Click here now!!!</a>
                         
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="second-slide" src="images/banner1.png" alt="Second slide">
+                  <img class="second-slide" src="images/b3.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <span>All New Phones </span>
-                        <h1>up to 50% Flat Sale</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content
-                           <br> of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                        <a class="buynow" href="#">Buy Now</a>
+                        <span>Sales off 15% </span>
+                        <h1>For the 15th of every month</h1>
+                       
+                        <a class="buynow" href="hireService">Click here now!!!</a>
                         
                      </div>
                   </div>
