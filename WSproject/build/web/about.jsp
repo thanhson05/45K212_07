@@ -48,27 +48,30 @@
                 <div class="row">
                     <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
                         <div class="about_img">
-                            <figure><img src="images/aboutbg.jpg" alt="img" /></figure>
+                            <figure><img src="images/gt0.1.png" alt="img" /></figure>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
                         <div class="about_box">
                             <span>Về dịch vụ của WS</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the </p>
+                            <p style="font-family: 'Time New Roman', Times, serif; ">Căn hộ The Royal Đà Nẵng – Tháp Ven Sông là nhà ở cao tầng, khách sạn cao cấp và chuỗi thương mại – dịch vụ tọa lạc tại thửa số 82, tờ bản đồ số 7 (Khu A1-1), mặt tiền đường Bạch Đằng, phường Bình Thuận, quận Hải Châu, TP Đà Nẵng. Với quy mô lớn, nằm trên khu đất vàng, ngay trung tâm thành phố với muôn vàn tiện ích sẵn có, với thiết kế theo phong cách Nhật Bản cùng lối sống tinh tế, thời thượng, tự hào là điểm đến an cư lạc nghiệp hoàn hảo cũng như đầu tư kinh doanh bất động sản.
+WS là một dịch vụ của The Royal nhằm giúp những người dân tại chung cư dễ dàng tìm kiếm những người giúp việc uy tín.
+</p>
 
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
                         <div class="about_box_ ">
-                            <span>Our Mobile Shop</span>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of It is a long established fact that a reader will be distracted by the </p>
-
+                            <span>Ý nghĩa và Sứ mệnh</span>
+                            <p style="font-family: 'Time New Roman', Times, serif; ">WS chuyên cung cấp dịch vụ giúp việc chất lượng, đã được qua đào tạo để phục vụ và phù hợp với nhu cầu mong muốn của khách hàng. WS ra đời với sứ mệnh đáp ứng nhu cầu giải quyết việc nhà của người dân tại chung cư và nâng cao giá trị nghề giúp việc nhà bằng cách xây dựng nguồn nhân lực giúp việc bài bản, chuyên nghiệp và tận tâm. Cuộc sống thảnh thơi khi nhẹ đi gánh nặng việc nhà của khách hàng.
+</p>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
-                        <div class="about_img">
-                            <figure><img src="images/aboutbg.jpg" alt="img" /></figure>
+                         <div class="about_img">
+                            <figure><img src="images/yn1.jpg" alt="img" /></figure>
                         </div>
+ 
                     </div>
                 </div>
             </div>
