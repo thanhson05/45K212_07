@@ -102,6 +102,7 @@ h6 {
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
      box-sizing: border-box;
+     font-size: 20px;
 }
 
 h1 a,
@@ -132,6 +133,7 @@ p {
      font-weight: 300;
      font-size: 15px;
      line-height: 24px;
+     font-family: 'Time New Roman', Times, serif;
 }
 
 a {
@@ -479,13 +481,15 @@ ul.top_icon li a {
 
 .menu-area-main li:hover a,
 .menu-area-main li:focus a {
-     color: #ffff;
+     color: #fff;
      font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
 }
 
 .menu-area-main li.active a {
      color: #fff;
      font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
 }
 
 .right_cart_section {
@@ -1064,11 +1068,11 @@ ul.top_icon li a {
 
 .main-menu ul>li a {
      line-height: 20px;
-     font-size: 16px;
+     font-size: 18px;
      display: block;
      font-weight: 500;
      color: #fff;
-     padding: 22px 30px;
+     padding: 20px 20px;
 }
 
 
@@ -1729,7 +1733,7 @@ color: #fff;
 .about .about_box h3 {
      font-weight: bold;
      font-size: 30px;
-     color: #888687;
+     color: #000;
      line-height: 32px;
      padding-bottom: 7px;
     display: block;
@@ -1760,7 +1764,7 @@ display: block
 }
 
 .about_box_ { text-align: left;
-     padding-top: 130px;}
+     padding-top: 70px;}
 
 .about_box_ p {
      font-size: 17px;
@@ -1829,7 +1833,7 @@ border-radius: 50px;
      color: #f2b87f;
 }
 
-.testimonial_cont h3 { color: #000; font-family: poppins;}
+.testimonial_cont h3 { color: #000; font-family: "Time New Roman", Time, serif;}
 
 
      
