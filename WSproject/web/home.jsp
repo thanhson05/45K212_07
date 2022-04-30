@@ -64,7 +64,7 @@
                         <div class="about_box">
                             <h3>Giới thiệu</h3>
                             <span>Dịch vụ cho thuê giúp việc</span>
-                            <p> WS sẽ cung cấp cho các cư dân của căn hộ những dịch vụ về giúp việc tốt nhất <br> Bằng trách nhiệm và những thành tự mà WS đạt được chúng tôi cam kết sẽ làm việc với năng suất cao nhất hướng đến sự hài lòng tuyệt đối của quý khách hàng. </p>
+                            <p> WS sẽ cung cấp cho các cư dân của căn hộ những dịch vụ về giúp việc tốt nhất <br> Bằng trách nhiệm và những thành tựu mà WS đạt được chúng tôi cam kết sẽ làm việc với năng suất cao nhất hướng đến sự hài lòng tuyệt đối của quý khách hàng. </p>
                         </div>
 
                     </div>
@@ -140,9 +140,9 @@
                                 </div>
                                 <div class="full testimonial_cont text_align_center cross_layout">
                                     <div class="cross_inner">
-                                        <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                        </p>
+                                        <h3> Unbalanced life <br><strong class="ornage_color">WS</strong></h3>
+                                        <p style="font-family: 'Time New Roman', Times, serif; font-size: 20px; ">Sau cả ngày dài làm việc căng thẳng, việc chăm lo cho gia đình là một trong những vấn đề đau đầu của giới văn phòng. Việc phải giải quyết những công việc nhà hằng ngày làm cho mọi người không còn nhiều thời gian để chăm sóc cho bản thân, bạn bè và người thân. Đôi khi chính mớ việc nhà bộn bề cũng là nguyên nhân gây ảnh hưởng đến tình cảm trong gia đình.
+</p>     
                                         <div class="full text_align_center margin_top_30">
                                             <img src="icon/testimonial_qoute.png">
                                         </div>
@@ -158,9 +158,8 @@
                                 </div>
                                 <div class="full testimonial_cont text_align_center cross_layout">
                                     <div class="cross_inner">
-                                        <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                        </p>
+                                        <h3>Service<br><strong class="ornage_color">WS</strong></h3>
+                                        <p style="font-family: 'Time New Roman', Times, serif; font-size: 20px">Nhịp sống đô thị đang dần trở nên bận rộn hơn với công việc và xã hội. Đặc biệt thời gian của người phụ nữ dành cho gia đình và chăm sóc nhà cửa cũng càng trở nên eo hẹp hơn. Vậy làm sao để cân bằng được giữa công việc và gia đình luôn là vấn đề khúc mắc của nhiều gia đình Việt. Đã có nhiều gia đình bỏ ra một khoản tiền lớn hằng tháng chỉ để thuê giúp việc cố định nhưng đôi lúc việc này trở nên không thực sự cần thiết vì không phải lúc nào cũng có việc để người giúp việc làm liên tục. Lúc này giúp việc nhà theo giờ sẽ là giải pháp hợp lý cho mọi gia đình!</p>
                                         <div class="full text_align_center margin_top_30">
                                             <img src="icon/testimonial_qoute.png">
                                         </div>
@@ -177,9 +176,8 @@
                                 </div>
                                 <div class="full testimonial_cont text_align_center cross_layout">
                                     <div class="cross_inner">
-                                        <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</i>
-                                        </p>
+                                        <h3>Support<br><strong class="ornage_color">WS</strong></h3>
+                                        <p style="font-family: 'Time New Roman', Times, serif;font-size: 20px ">Các kiến nghị của khách hàng sẽ được giải đáp nhanh chóng qua các kênh liên hệ như tổng đài, email hoặc trò chuyện trực tuyến qua hotline.</p>
                                         <div class="full text_align_center margin_top_30">
                                             <img src="icon/testimonial_qoute.png">
                                         </div>
