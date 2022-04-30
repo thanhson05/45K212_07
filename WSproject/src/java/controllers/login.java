@@ -47,6 +47,7 @@ public class login extends HttpServlet {
         }
         if (action.equalsIgnoreCase("logout")) {
             session.removeAttribute("user");
+            session.setAttribute("admin", "false");
             response.sendRedirect("home");
         }
         if (action.equals("checkLogin")) {
