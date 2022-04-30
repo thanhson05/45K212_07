@@ -121,7 +121,7 @@
                                 <td>${staff.getName()}</td>
                                 <td>${staff.getPhone()}</td>
                                 <td>${staff.getAddress()}</td>
-                                <td> <img src="${staff.getImglink()}" alt="img" style="width: 100px" /></td>
+                                <td> <img src="${staff.getImglink().trim()}" alt="img" style="width: 100px" /></td>
                                 <td><a href="staffmanager?action=delete&sid=${staff.getId()}" style="color: red;
                                        text-decoration: none;">Xóa</a> </td>
 
