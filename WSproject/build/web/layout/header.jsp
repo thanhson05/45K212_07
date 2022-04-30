@@ -48,15 +48,18 @@
                                 </ul>
                                 <div style="width: 100%;display: flex; flex-direction: column">
                                     <c:if test="${sessionScope.user != null}">
-                                        <p style="color: white; font-size: 20px; ">Welcome ${sessionScope.user}</p>
+
                                         <c:if test="${sessionScope.admin}">
                                             <div style="display: flex; flex-direction: row;justify-content: flex-end">
-                                                <a style="color: white; font-size: 20px; margin-right: 35px" href="seeFeedback?action=see">Xem phản hồi</a>
-                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="orderManager?action=see">Quản lí đơn hàng</a>
-                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="staffmanager?action=see">Quản lí Nhân Viên</a>
-                                                <a style="color: white; font-size: 20px;margin-right: 35px" href="customerManager?action=see">Quản lí Khách Hàng </a>
-
+                                                <a style="color: white; font-family: 'Time New Roman', Times, serif; font-size: 20px; margin-right: 25px" href="seeFeedback?action=see">Xem phản hồi</a>
+                                                <a style="color: white; font-family: 'Time New Roman', Times, serif; font-size: 20px;margin-right: 25px" href="orderManager?action=see">Quản lí đơn hàng</a>
+                                                <a style="color: white; font-family: 'Time New Roman', Times, serif; font-size: 20px;margin-right: 25px" href="staffmanager?action=see">Quản lí nhân viên</a>
+                                                <a style="color: white; font-family: 'Time New Roman', Times, serif; font-size: 20px;margin-right: 25px" href="customerManager?action=see">Quản lí khách hàng </a>
                                             </div>
+                                        </c:if>
+
+                                        <c:if test="${sessionScope.user != null}">
+                                            <p style="color: white; font-size: 25px; margin:10px; ">Welcome ${sessionScope.user}</p>
                                         </c:if>
                                         <c:if test="${!sessionScope.admin}">
                                             <div style="display: flex; flex-direction: row;justify-content: flex-end">
@@ -66,6 +69,7 @@
 
                                         </c:if>
                                     </c:if>
+
                                 </div>
                             </nav>
                         </div>
@@ -75,8 +79,8 @@
                     <div class="location_icon_bottum">
                         <ul>
                             <li><img src="icon/call.png" />(+71)9876543109</li>
-                            <li><img src="icon/email.png" />demo@gmail.com</li>
-                            <li><img src="icon/loc.png" />Location</li>
+                            <li><img src="icon/email.png" />wstheroyal@gmail.com</li>
+
                         </ul>
                     </div>
                 </div>
