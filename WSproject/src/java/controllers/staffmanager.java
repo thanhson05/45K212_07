@@ -97,13 +97,14 @@ public class staffmanager extends HttpServlet {
             response.getWriter().println(phone);
             response.getWriter().println(address);
             response.getWriter().println(imglink);
-//            dao.updateStaff(name, phone, address, imglink, id);
+            dao.updateStaff(name, phone, address, imglink, id);
         }
         if (action.equals("add")) {
             dao.insertStaff(name, phone, address, imglink);
         }
         ArrayList<Staff> staffList = dao.getAllStaff();
         request.setAttribute("stafflist", staffList);
+        response.sendRedirect("http://localhost:8080/WSproject/staffmanager?action=see");
 //        request.getRequestDispatcher("saff.jsp").forward(request, response);
     }
 
